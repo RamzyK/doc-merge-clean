@@ -1,7 +1,21 @@
-export { IFile, IInputFileOptions, InputFile, InputFileRef, IInputFile, IOutputFile } from './input-ref/input-file';
-export { IPluginOld, Generator, IBody, IPluginResult, isIBody, OutputType } from './generator';
-export { FilePlugin } from './docx-plugin';
-export { IPlugin } from './generateur/plugin';
-export { DocGenerator } from './plugins/docGenerator';
-export { App } from './app';
-export { Client } from './client/client';
+export declare type InputFileRef = string | IFile;
+export declare enum OutputType {
+    download = 0,
+    url = 1,
+    upload = 2
+}
+export interface IFile {
+    url: string;
+    headers?: any;
+    verb?: string;
+}
+export interface IBody {
+    type: string;
+    data: any;
+    schema?: string;
+    culture?: string;
+    modeleRef: InputFileRef;
+    outputFileName?: string;
+    outputPath?: string;
+    outputType: OutputType;
+}
