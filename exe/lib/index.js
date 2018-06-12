@@ -1,0 +1,27 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var input_file_1 = require("./input-ref/input-file");
+exports.IFile = input_file_1.IFile;
+exports.IInputFileOptions = input_file_1.IInputFileOptions;
+exports.InputFile = input_file_1.InputFile;
+exports.InputFileRef = input_file_1.InputFileRef;
+exports.IInputFile = input_file_1.IInputFile;
+exports.IOutputFile = input_file_1.IOutputFile;
+var generator_1 = require("./generator");
+exports.IPluginOld = generator_1.IPluginOld;
+exports.Generator = generator_1.Generator;
+exports.IBody = generator_1.IBody;
+exports.IPluginResult = generator_1.IPluginResult;
+exports.isIBody = generator_1.isIBody;
+exports.OutputType = generator_1.OutputType;
+var docx_plugin_1 = require("./docx-plugin");
+exports.FilePlugin = docx_plugin_1.FilePlugin;
+var plugin_1 = require("./generateur/plugin");
+exports.IPlugin = plugin_1.IPlugin;
+var docGenerator_1 = require("./plugins/docGenerator");
+exports.DocGenerator = docGenerator_1.DocGenerator;
+var app_1 = require("./app");
+exports.App = app_1.App;
+var client_1 = require("./client/client");
+exports.Client = client_1.Client;
+//# sourceMappingURL=index.js.map
